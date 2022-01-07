@@ -2893,8 +2893,8 @@ img.u-pull-left {
 .s-header__logo {
     z-index  : 102;
     position : absolute;
-    top: 6rem;
-    left: 85.8rem;
+    top      : 3.2rem;
+    left     : 2.8rem;
 }
 
 .s-header__logo a {
