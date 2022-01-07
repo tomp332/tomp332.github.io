@@ -1,282 +1,343 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Stacked HTML CSS Template</title>
-<!--
-Stacked Template
-https://templatemo.com/tm-505-stacked
--->
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tom's Profile</title>
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <nav class="nav">
-          <div class="burger">
-            <div class="burger__patty"></div>
-          </div>
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
 
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#1" class="nav__link c-blue"><img src="img/home-icon.png" alt=""></a>
-            </li>
-            <li class="nav__item">
-              <a href="#2" class="nav__link c-yellow scrolly"><img src="img/about-icon.png" alt=""></a>
-            </li>
-            <li class="nav__item">
-              <a href="#3" class="nav__link c-red"><img src="img/projects-icon.png" alt=""></a>
-            </li>
-            <li class="nav__item">
-              <a href="#4" class="nav__link c-green"><img src="img/contact-icon.png" alt=""></a>
-            </li>
-          </ul>
-        </nav>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-        <section class="panel b-blue" id="1">
-          <article class="panel__wrapper">
-            <div class="panel__content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="home-content">
-                      <div class="home-heading">
-                        <h1><em>Stak</em> HTML CSS</h1>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="home-box-content">
-                            <div class="left-text">
-                              <h4>New <em>Stacked</em> Template</h4>
-                              <p>Stacked HTML CSS Template is provided by TemplateMo website. You can edit and use this template for any purpose. Please mention your friends about our website. Thank you.</p>
-                              <div class="primary-button">
-                                <a href="#2">Discover More</a>
-                              </div>
-                            </div>
-                            <div class="right-image">
-                              <img src="img/right-home-image.png" alt="">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="s-header__logo">
+                <a class="logo" href="index.html">
+                    <img src="images/main.png" alt="Homepage">
+                </a>
             </div>
-          </article>
-        </section>
-        <section class="panel b-yellow" id="2">
-          <article class="panel__wrapper">
-            <div class="panel__content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="about-content">
-                      <div class="heading">
-                        <h4>About us</h4>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="about-box-content">
-                            <img src="img/about-image.png" alt="">
-                          </div>
-                        </div>
-                        <div class="col-md-7 col-md-offset-5">
-                          <div class="about-box-text">
-                            <h4>Curabitur varius sapien</h4>
-                            <p>Please feel free to contact us if you have any question or suggestion about our free templates. Thank you. Template redistribution is <strong>NOT allowed</strong>.</p>
-                            <div class="primary-button">
-                              <a href="#3">Discover More</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-        <section class="panel b-red" id="3">
-          <article class="panel__wrapper">
-            <div class="panel__content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="projects-content">
-                      <div class="heading">
-                        <h4>Recent Projects</h4>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="owl-carousel owl-theme projects-container">
-                            <div>
-                              <div class="project-item">
-                                <a href="img/project-item-01.jpg" data-lightbox="image-1"><img src="img/project-item-01.jpg" alt=""></a>
-                                <div class="text-content">
-                                  <h4>Work Smart</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a href="#">Discover More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div class="project-item">
-                                <a href="img/project-item-02.jpg" data-lightbox="image-1"><img src="img/project-item-02.jpg" alt=""></a>
-                                <div class="text-content">
-                                  <h4>Creative Idea</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a href="#">Discover More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div class="project-item">
-                                <a href="img/project-item-03.jpg" data-lightbox="image-1"><img src="img/project-item-03.jpg" alt=""></a>
-                                <div class="text-content">
-                                  <h4>New Thought</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a href="#">Discover More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div class="project-item">
-                                <a href="img/project-item-04.jpg" data-lightbox="image-1"><img src="img/project-item-04.jpg" alt=""></a>
-                                <div class="text-content">
-                                  <h4>Next Moment</h4>
-                                  <p>Lorem ipsum dolor sit amet, adipis scing elit etiam sit amet ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a href="#">Discover More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div class="project-item">
-                                <a href="img/project-item-05.jpg" data-lightbox="image-1"><img src="img/project-item-05.jpg" alt=""></a>
-                                <div class="text-content">
-                                  <h4>Artwork</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a href="#">Discover More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div class="project-item">
-                                <a href="img/project-item-06.jpg" data-lightbox="image-1"><img src="img/project-item-06.jpg" alt=""></a>
-                                <div class="text-content">
-                                  <h4>Sixth Box</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a href="#">Discover More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div>
-                              <div class="project-item">
-                                <a href="img/project-item-07.jpg" data-lightbox="image-1"><img src="img/project-item-07.jpg" alt=""></a>
-                                <div class="text-content">
-                                  <h4>Item #7</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a href="#">Discover More</a>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-        <section class="panel b-green" id="4">
-          <article class="panel__wrapper">
-            <div class="panel__content">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-2">
-                    <div class="contact-content">
-                      <div class="heading">
-                        <h4>Contact us</h4>
-                      </div>
-                      <div class="row">
-                        <div class="col-md-8">
-                          <div class="contat-form">
-                            <form id="contact" action="" method="post">
-                              <fieldset>
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
-                              </fieldset>
-                              <fieldset>
-                                <input name="email" type="email" class="form-control" id="email" placeholder="Email" required="">
-                              </fieldset>
-                              <fieldset>
-                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message" required=""></textarea>
-                              </fieldset>
-                              <fieldset>
-                                <button type="submit" id="form-submit" class="btn">Send Message</button>
-                              </fieldset>
-                            </form>
-                          </div>
-                        </div>
-                        <div class="col-md-4">
-                          <div class="more-info">
-                            <p>Nunc purus ligula, ullamcorper id velit id, vestibulum auc sapien. Sed quis mauris eget sem imperdiet rhoncus.<br><br>
-                            <em>880 Etiam mauris erat,
-								<br>Vestibulum eu augue nec, 10940</em></p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="footer">
-                      <p>Copyright &copy; 2020 Your Company 
-                      | Design: TemplateMo</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </article>
-        </section>
-      
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+            <a class="s-header__menu-toggle" href="#0" class="">
+                <span class="s-header__menu-text">Menu</span>
+                <span class="s-header__menu-icon"></span>
+            </a>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+            <nav class="s-header__nav">
 
-    </body>
+                <a href="#0" class="s-header__nav-close-btn" title="close"><span>Close</span></a>
+                <h3>P@ko</h3>
+
+                <ul class="s-header__nav-list">
+                    <li><a href="#intro" class="smoothscroll">Intro</a></li>
+                    <li><a href="#about" class="smoothscroll">About</a></li>
+                    <li><a href="#services" class="smoothscroll">Projects</a></li>
+                    <li><a href="#contact" class="smoothscroll">Contact</a></li>
+                </ul>
+
+                <ul class="s-header__social">
+                    <li>
+                        <a href="#0">
+                            <a href="https://twitter.com/tomp332">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                            </a>
+                            <span class="u-screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0">
+                            <a href="mailto:tomp12@protonmail.com">
+                                <svg width="30.03px" height="30.03px" viewBox="0 -4.2 30.03 30.03" id="_15_-_Email" data-name="15 - Email" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="Path_243" data-name="Path 243" d="M31.015,8.189a3,3,0,0,0-3-3H3.985a3,3,0,0,0-3,3V23.811a3,3,0,0,0,3,3h24.03a3,3,0,0,0,3-3V8.189Zm-2,0V23.811a1,1,0,0,1-1,1H3.985a1,1,0,0,1-1-1V8.189a1,1,0,0,1,1-1h24.03a1,1,0,0,1,1,1Z" transform="translate(-0.985 -5.189)" fill-rule="evenodd"/>
+                                    <path id="Path_244" data-name="Path 244" d="M2.9,8.465l12.613,7.008a1.006,1.006,0,0,0,.972,0L29.1,8.465a1,1,0,1,0-.971-1.748L16,13.455,3.872,6.717A1,1,0,1,0,2.9,8.465Z" transform="translate(-0.985 -5.189)" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+
+                            <span class="u-screen-reader-text">Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0">
+                            <a href="https://github.com/tomp332">
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#333" fill-rule="evenodd" d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"/>
+                                </svg>
+                            </a>
+
+                            <span class="u-screen-reader-text">Email</span>
+                        </a>
+                    </li>
+                </ul> 
+
+            </nav>
+
+        </header> <!-- end s-header -->
+
+
+        <!-- # site-content
+        ================================================== -->
+        <section id="content" class="s-content">
+
+
+            <!-- intro
+            ----------------------------------------------- -->
+            <section id="intro" class="s-intro target-section">
+
+                <div class="s-intro__bg rellax" data-rellax-speed="-5"></div>
+
+                <div class="row s-intro__content">
+
+                    <div class="column lg-12 s-intro__content-inner">
+                        <h1 class="s-intro__title">
+                        Welcome to my profile<br>
+                        </h1>	
+
+                        <div class="s-intro__more">
+                            <a class="smoothscroll btn btn--stroke s-intro__more-btn" href="#about">
+                                For projects and more..
+                            </a>
+                        </div>	
+                    </div> <!-- s-intro__content-inner -->
+
+                </div> <!-- s-intro__content -->
+
+                <ul class="s-intro__social">
+                    <li>
+                        <a href="#0">
+                            <a href="https://twitter.com/tomp332">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
+                            </a>
+                            <span class="u-screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0">
+                            <a href="mailto:tomp12@protonmail.com">
+                                <svg width="30.03px" height="30.03px" viewBox="0 -4.2 30.03 30.03" id="_15_-_Email" data-name="15 - Email" xmlns="http://www.w3.org/2000/svg">
+                                    <path id="Path_243" data-name="Path 243" d="M31.015,8.189a3,3,0,0,0-3-3H3.985a3,3,0,0,0-3,3V23.811a3,3,0,0,0,3,3h24.03a3,3,0,0,0,3-3V8.189Zm-2,0V23.811a1,1,0,0,1-1,1H3.985a1,1,0,0,1-1-1V8.189a1,1,0,0,1,1-1h24.03a1,1,0,0,1,1,1Z" transform="translate(-0.985 -5.189)" fill-rule="evenodd"/>
+                                    <path id="Path_244" data-name="Path 244" d="M2.9,8.465l12.613,7.008a1.006,1.006,0,0,0,.972,0L29.1,8.465a1,1,0,1,0-.971-1.748L16,13.455,3.872,6.717A1,1,0,1,0,2.9,8.465Z" transform="translate(-0.985 -5.189)" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+
+                            <span class="u-screen-reader-text">Email</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#0">
+                            <a href="https://github.com/tomp332">
+                                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#333" fill-rule="evenodd" d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"/>
+                                </svg>
+                            </a>
+
+                            <span class="u-screen-reader-text">Email</span>
+                        </a>
+                    </li>
+                </ul>  <!-- s-intro__social -->
+
+                <div class="s-intro__scroll">
+                    <a href="#about" class="smoothscroll">
+                        <span>Scroll Down</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: rotate(180deg);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
+                    </a>
+                </div> <!-- s-intro__scroll -->
+
+            </section> <!-- end s-intro -->
+
+
+            <!-- about
+            ----------------------------------------------- -->
+            <section id="about" class="s-about target-section">
+
+                <div class="row s-about__content" data-animate-block>
+                    <div class="column lg-12">
+                        <h2 class="text-pretitle" data-animate-el>Whoami</h2>
+                        <p class="s-about__desc" data-animate-el>
+                            My name is <span>Tom</span> and I am a hacking enthusiast,
+                            software developer and also a Computer Science student on the side.
+
+                            I like to develop cool project mainly for the Pentesting community in which I combine all areas of Backend , Frontend and much more.
+                        </p>
+                    </div> <!-- end column  -->
+                </div> <!-- end s-about__content  -->
+
+            </section> <!-- end about -->
+
+
+            <!-- services
+            ----------------------------------------------- -->
+            <section id="services" class="s-services">
+
+                <div class="s-services__bg"></div>
+                
+                <div class="row narrow section-header section-header--dark has-bottom-sep">
+                    <div class="column lg-12">
+                        
+                        <h3 class="text-pretitle">Projects</h3>
+                        <h1 class="text-display-title">ls -la</h1>
+                        
+                        <p>These are my main projects that I work on my spare time.<br>
+                        All of these projects were meant to be a good experience and some research for a different topic every time.
+                        Along the way I have developed a lot of cool frameworks and tools that were meant to be in use for a Pentest or Red-Team engagement.
+                            <br> Enjoy!</p>
+                        
+                    </div> <!-- end column -->
+                </div> <!-- end section header -->
+
+                <div class="s-services__content">
+
+                    <div class="row services-list block-lg-one-half block-tab-whole" data-animate-block>
+
+                        <div class="column service-item" data-animate-el>
+
+                            <span class="service-icon-block">
+                                    <img src="images/espia_server.png" width="60" height="60">
+                            </span>
+
+                            <div class="service-content">
+                                <a href="https://github.com/tomp332/TheEspiaProject"><h3 class="h4">The Espia Project</h3></a>
+
+                                <p>
+                                A Spyware with its own server in order to extract and retrieve passwords from browsers and other sources
+                                </p>
+                            </div>
+
+                        </div> <!-- end service-item -->
+
+                        <div class="column service-item" data-animate-el>
+
+                            <span class="service-icon-block">
+                                    <img src="images/virus.png" width="60" height="60">
+                            </span>
+
+                            <div class="service-content">
+                                <a href="https://github.com/tomp332/Lazy-Wifi"><h3 class="h4">The Covid Framework</h3></a>
+
+                                <p>
+                                    An exploitation C2 framework with built in commands and a very nice UI application to control and have a good user experience in an engagement
+                                </p>
+                            </div>
+
+                        </div> <!-- end service-item -->
+
+                        <div class="column service-item" data-animate-el>
+
+                            <span class="service-icon-block">
+                                    <img src="images/lazy_wifi.png" width="150" height="60">
+                            </span>
+
+                            <div class="service-content">
+                                <br>
+                                <a href="https://github.com/tomp332/Lazy-Wifi"><h3 class="h4">Lazy-Wifi</h3></a>
+
+                                <p>
+                                    A full wifi hacking automation meant to make the wifi hacking experience fully automated and easy to use.
+                                </p>
+                            </div>
+
+                        </div> <!-- end service-item -->
+
+                        <div class="column service-item" data-animate-el>
+
+                            <span class="service-icon-block">
+                                    <img src="images/timer.png" width="60" height="200">
+                            </span>
+
+                            <div class="service-content">
+                               <h3 class="h4">Coming soon..</h3>
+                                <p>
+                                    More projects on the way!
+                                </p>
+                            </div>
+
+                        </div> <!-- end service-item -->
+
+                    </div> <!-- end services-list -->
+                    
+                </div> <!-- end services-content -->   			
+
+            </section> <!-- end services -->
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
 </html>
