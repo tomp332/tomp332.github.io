@@ -1,338 +1,197 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js" >
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tom's Profile</title>
+    <link rel="stylesheet" href="./script/css/styles.css">
 
-    <script>
-        document.documentElement.classList.remove('no-js');
-        document.documentElement.classList.add('js');
-    </script>
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- favicons
-    ================================================== -->
-    <link rel="icon" type="image/ico" sizes="32x32" href="main.ico">
-    <link rel="icon" type="image/ico" sizes="16x16" href="main.ico">
-    <link rel="manifest" href="site.webmanifest">
-
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/boxicons@2.0.9/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/eddf6fa706.js" crossorigin="anonymous"></script>
+    <title>Portfolio| Tom </title>
 </head>
 
-
-<body id="top">
-
-
-    <!-- preloader
-    ================================================== -->
-    <div id="preloader">
-        <div id="loader">
-        </div>
-    </div>
-
-
-    <!-- page wrap
-    ================================================== -->
-    <div id="page" class="s-pagewrap">
-
-
-        <!-- # site header 
-        ================================================== -->
-        <header class="s-header">
-
-            <div class="s-header__logo">
-                <a class="logo" href="index.html">
-                    <img src="images/main.png" alt="Homepage">
-                </a>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Tom</a>
             </div>
 
-            <a class="s-header__menu-toggle" href="#0" class="">
-                <span class="s-header__menu-text">Menu</span>
-                <span class="s-header__menu-icon"></span>
-            </a>
-
-            <nav class="s-header__nav">
-
-                <a href="#0" class="s-header__nav-close-btn" title="close"><span>Close</span></a>
-                <h3>P@ko</h3>
-
-                <ul class="s-header__nav-list">
-                    <li><a href="#intro" class="smoothscroll">Intro</a></li>
-                    <li><a href="#about" class="smoothscroll">About</a></li>
-                    <li><a href="#services" class="smoothscroll">Projects</a></li>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                 </ul>
-
-                <ul class="s-header__social">
-                    <li>
-                        <a href="#0">
-                            <a href="https://twitter.com/tomp332">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
-                            </a>
-                            <span class="u-screen-reader-text">Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#0">
-                            <a href="mailto:tomp12@protonmail.com">
-                                <svg width="30.03px" height="30.03px" viewBox="0 -4.2 30.03 30.03" id="_15_-_Email" data-name="15 - Email" xmlns="http://www.w3.org/2000/svg">
-                                    <path id="Path_243" data-name="Path 243" d="M31.015,8.189a3,3,0,0,0-3-3H3.985a3,3,0,0,0-3,3V23.811a3,3,0,0,0,3,3h24.03a3,3,0,0,0,3-3V8.189Zm-2,0V23.811a1,1,0,0,1-1,1H3.985a1,1,0,0,1-1-1V8.189a1,1,0,0,1,1-1h24.03a1,1,0,0,1,1,1Z" transform="translate(-0.985 -5.189)" fill-rule="evenodd"/>
-                                    <path id="Path_244" data-name="Path 244" d="M2.9,8.465l12.613,7.008a1.006,1.006,0,0,0,.972,0L29.1,8.465a1,1,0,1,0-.971-1.748L16,13.455,3.872,6.717A1,1,0,1,0,2.9,8.465Z" transform="translate(-0.985 -5.189)" fill-rule="evenodd"/>
-                                </svg>
-                            </a>
-
-                            <span class="u-screen-reader-text">Email</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#0">
-                            <a href="https://github.com/tomp332">
-                                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#333" fill-rule="evenodd" d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"/>
-                                </svg>
-                            </a>
-
-                            <span class="u-screen-reader-text">Email</span>
-                        </a>
-                    </li>
-                </ul> 
-
-            </nav>
-
-        </header> <!-- end s-header -->
-
-
-        <!-- # site-content
-        ================================================== -->
-        <section id="content" class="s-content">
-
-
-            <!-- intro
-            ----------------------------------------------- -->
-            <section id="intro" class="s-intro target-section">
-
-                <div class="s-intro__bg rellax" data-rellax-speed="-5"></div>
-
-                <div class="row s-intro__content">
-
-                    <div class="column lg-12 s-intro__content-inner">
-                        <h1 class="s-intro__title">
-                        Welcome!<br>
-                        </h1>	
-
-                        <div class="s-intro__more">
-                            <a class="smoothscroll btn btn--stroke s-intro__more-btn" href="#about">
-                                For projects and more..
-                            </a>
-                        </div>	
-                    </div> <!-- s-intro__content-inner -->
-
-                </div> <!-- s-intro__content -->
-
-                <ul class="s-intro__social">
-                    <li>
-                        <a href="#0">
-                            <a href="https://twitter.com/tomp332">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);transform:;-ms-filter:"><path d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809 c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793 c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05 c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032 c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028 c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22 c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"></path></svg>
-                            </a>
-                            <span class="u-screen-reader-text">Twitter</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#0">
-                            <a href="mailto:tomp12@protonmail.com">
-                                <svg width="30.03px" height="30.03px" viewBox="0 -4.2 30.03 30.03" id="_15_-_Email" data-name="15 - Email" xmlns="http://www.w3.org/2000/svg">
-                                    <path id="Path_243" data-name="Path 243" d="M31.015,8.189a3,3,0,0,0-3-3H3.985a3,3,0,0,0-3,3V23.811a3,3,0,0,0,3,3h24.03a3,3,0,0,0,3-3V8.189Zm-2,0V23.811a1,1,0,0,1-1,1H3.985a1,1,0,0,1-1-1V8.189a1,1,0,0,1,1-1h24.03a1,1,0,0,1,1,1Z" transform="translate(-0.985 -5.189)" fill-rule="evenodd"/>
-                                    <path id="Path_244" data-name="Path 244" d="M2.9,8.465l12.613,7.008a1.006,1.006,0,0,0,.972,0L29.1,8.465a1,1,0,1,0-.971-1.748L16,13.455,3.872,6.717A1,1,0,1,0,2.9,8.465Z" transform="translate(-0.985 -5.189)" fill-rule="evenodd"/>
-                                </svg>
-                            </a>
-
-                            <span class="u-screen-reader-text">Email</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#0">
-                            <a href="https://github.com/tomp332">
-                                <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#333" fill-rule="evenodd" d="M11.9989871,1 C5.92550416,1 1,5.92482888 1,12.0003376 C1,16.8603395 4.15153934,20.9829338 8.52263728,22.4374904 C9.0729918,22.5387827 9.27355045,22.199116 9.27355045,21.9073943 C9.27355045,21.6467356 9.2640965,20.954572 9.25869425,20.0368642 C6.19899322,20.7013414 5.55342398,18.5620492 5.55342398,18.5620492 C5.0530403,17.2911692 4.33183953,16.9528531 4.33183953,16.9528531 C3.33309801,16.2708186 4.40747107,16.2843243 4.40747107,16.2843243 C5.51155652,16.3619816 6.09229872,17.4181221 6.09229872,17.4181221 C7.07348292,19.0988981 8.66714755,18.6133706 9.2938089,18.3317781 C9.39375058,17.6213819 9.67804414,17.1365297 9.99205009,16.86169 C7.54955646,16.5841493 4.98146045,15.6401056 4.98146045,11.4249977 C4.98146045,10.224347 5.41026428,9.24181221 6.11390773,8.47334172 C6.00046042,8.19512569 5.62297799,7.07618404 6.22195279,5.56220265 C6.22195279,5.56220265 7.14506277,5.26642929 9.24653918,6.68992296 C10.12373,6.44547101 11.0650726,6.32392032 12.0003376,6.31919335 C12.9349274,6.32392032 13.8755947,6.44547101 14.7541361,6.68992296 C16.8542619,5.26642929 17.7760214,5.56220265 17.7760214,5.56220265 C18.3763467,7.07618404 17.9988643,8.19512569 17.8860923,8.47334172 C18.5910863,9.24181221 19.0165137,10.224347 19.0165137,11.4249977 C19.0165137,15.6509101 16.444366,16.5807729 13.9944443,16.8529114 C14.3888087,17.192578 14.7406305,17.863808 14.7406305,18.890236 C14.7406305,20.3603241 14.7271248,21.5467939 14.7271248,21.9073943 C14.7271248,22.2018171 14.9256576,22.5441849 15.4834403,22.4368151 C19.8511618,20.9788821 23,16.8589889 23,12.0003376 C23,5.92482888 18.0744958,1 11.9989871,1"/>
-                                </svg>
-                            </a>
-
-                            <span class="u-screen-reader-text">Email</span>
-                        </a>
-                    </li>
-                </ul>  <!-- s-intro__social -->
-
-                <div class="s-intro__scroll">
-                    <a href="#about" class="smoothscroll">
-                        <span>Scroll Down</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: rotate(180deg);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);"><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg>
-                    </a>
-                </div> <!-- s-intro__scroll -->
-
-            </section> <!-- end s-intro -->
-
-
-            <!-- about
-            ----------------------------------------------- -->
-            <section id="about" class="s-about target-section">
-
-                <div class="row s-about__content" data-animate-block>
-                    <div class="column lg-12">
-                        <h2 class="text-pretitle" data-animate-el>Whoami</h2>
-                        <p class="s-about__desc" data-animate-el>
-                            My name is <span>Tom</span> and I am a hacking enthusiast, software developer and also a Computer Science student. I like to develop cool projects mainly for the Pentesting community, research new topics mainly related to Windows Internals and more!
-                        </p>
-                    </div> <!-- end column  -->
-                </div> <!-- end s-about__content  -->
-
-            </section> <!-- end about -->
-
-
-            <!-- services
-            ----------------------------------------------- -->
-            <section id="services" class="s-services">
-
-                <div class="s-services__bg"></div>
-                
-                <div class="row narrow section-header section-header--dark has-bottom-sep">
-                    <div class="column lg-12">
-                        
-                        <h3 class="text-pretitle">Projects</h3>
-                        <h1 class="text-display-title">ls -la</h1>
-                        
-                        <p>These are my main projects that I work on my spare time.<br>
-                        All of these projects were meant to be for a good experience and some for a different topic every time.
-                        Along the way I have developed a lot of cool frameworks and tools that were meant to be in use for a Pentest or Red-Team engagement.
-                            <br> Enjoy!</p>
-                        
-                    </div> <!-- end column -->
-                </div> <!-- end section header -->
-
-                <div class="s-services__content">
-
-                    <div class="row services-list block-lg-one-half block-tab-whole" data-animate-block>
-
-                        <div class="column service-item" data-animate-el>
-
-                            <span class="service-icon-block">
-                                    <img src="images/espia_server.png" width="60" height="60">
-                            </span>
-
-                            <div class="service-content">
-                                <a href="https://github.com/tomp332/TheEspiaProject"><h3 class="h4">The Espia Project</h3></a>
-
-                                <p>
-                                A Spyware with its own server in order to extract and retrieve passwords from browsers and other sources
-                                </p>
-                            </div>
-
-                        </div> <!-- end service-item -->
-
-                        <div class="column service-item" data-animate-el>
-
-                            <span class="service-icon-block">
-                                    <img src="images/virus.png" width="60" height="60">
-                            </span>
-
-                            <div class="service-content">
-                                <a href="https://github.com/tomp332/The-Covid-Framework"><h3 class="h4">The Covid Framework</h3></a>
-
-                                <p>
-                                    An exploitation C2 framework with built in commands and a very nice UI application to control and have a good user experience in an engagement
-                                </p>
-                            </div>
-
-                        </div> <!-- end service-item -->
-
-                        <div class="column service-item" data-animate-el>
-
-                            <span class="service-icon-block">
-                                    <img src="images/lazy_wifi.png" width="150" height="60">
-                            </span>
-
-                            <div class="service-content">
-                                <br>
-                                <a href="https://github.com/tomp332/Lazy-Wifi"><h3 class="h4">Lazy-Wifi</h3></a>
-
-                                <p>
-                                    A full wifi hacking automation meant to make the wifi hacking experience fully automated and easy to use.
-                                </p>
-                            </div>
-
-                        </div> <!-- end service-item -->
-
-                        <div class="column service-item" data-animate-el>
-
-                            <span class="service-icon-block">
-                                    <img src="images/timer.png" width="60" height="200">
-                            </span>
-
-                            <div class="service-content">
-                               <h3 class="h4">Coming soon..</h3>
-                                <p>
-                                    More projects on the way!
-                                </p>
-                            </div>
-
-                        </div> <!-- end service-item -->
-
-                    </div> <!-- end services-list -->
-                    
-                </div> <!-- end services-content -->   			
-
-            </section> <!-- end services -->
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
             </div>
 
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
-                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
-                    "Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Tom</span></h1>
+
+                <a href="#" class="button">My CV</a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/tompaz1/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/tomp332" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home__img">
+                <img src="./img/profile.png" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="./img/about.png" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">I'm Tom</h2>
+                    <p class="about__text">I am a hacking enthusiast and a software developer. I like to develop cool projects mainly for the Pentesting community, research new topics mainly related to Windows Internals and more! </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <!-- <p class="skills__text"></p> -->
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='fab fa-python skills__icon'></i>
+                            <span class="skills__name">Python</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='fab fa-docker skills__icon'></i>
+                            <span class="skills__name">DOCKER</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='fab fa-linux skills__icon'></i>
+                            <span class="skills__name">LINUX</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="fa-sharp fa-solid fa-c skills__icon"></i>
+                            <span class="skills__name">C++</span>
                         </div>
                     </div>
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
-                "Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+
+                <div>
+                    <img src="./img/skills.png" alt="" class="skills__img">
                 </div>
             </div>
+        </section>
 
+        <!--===== Projects =====-->
+        <section class="contact section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <a href="https://github.com/tomp332/The-Covid-Framework">
+                        <img src="./img/covid.png" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/tomp332/The-Covid-Framework">
+                        <h2 class="about__subtitle">The Covid Framework</h2>
+                    </a>
+                    <p class="about__text">Post exploitation framework that uses a C2 backend and an injectable DLL agent for private usage</p>
+                </div>
+            </div>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <a href="https://github.com/tomp332/Lazy-Wifi">
+                        <img src="./img/lazy-wifi.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://github.com/tomp332/Lazy-Wifi">
+                        <h2 class="about__subtitle">Lazy Wifi</h2>
+                    </a>
+                    <p class="about__text">Lazy-Wifi is an automated wifi attack tool that makes your life easier regarding the entire brute force attack surface. This project was built in order to connect the scanning, handshake capture and brute-force process of the basic
+                        and known phase of wifi attacking.</p>
+                </div>
+            </div>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <a href="https://github.com/tomp332/TheEspiaProject">
+                        <img src="./img/espia.png" alt="">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="https://github.com/tomp332/TheEspiaProject">
+                        <h2 class="about__subtitle">The Espia Project</h2>
+                    </a>
+                    <p class="about__text">The Espia Project is a simple but useful client server SpyWare setup. Its main goal is to gather as much information as possible from the remote machine that has been compromised. Currently, the Espia client retrieves Edge, Chrome
+                        and Firefox passwords that are stored on the PC and enables a stealthy and fast way to conduct a brief and small attak.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Social Media</p>
+        <div class="footer__social">
+            <a href="https://github.com/tomp332" class="footer__icon"><i class='bx bxl-github' ></i></a>
+            <a href="https://twitter.com/tomp332" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.linkedin.com/in/tompaz1/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
         </div>
+        <p>&#169; 2021 copyright all right reserved</p>
+    </footer>
 
-    </div> <!-- end photoSwipe background -->
 
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="./script/js/main.js    "></script>
+
+    <!---==== PARTICLES JS=====-->
+    <div id="particles-js"></div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json',
+            function() {
+                console.log('particles.json loaded...')
+            })
+    </script>
+    <script type="text/javascript" src="./script/js/app.js"></script>
+    <script type="text/javascript" src="./script/js/particles.js"></script>
 
 </body>
+
 </html>
